@@ -1,0 +1,7 @@
+name: HardcoreWorldReset
+version: 1.0.0
+main: com.github.kdltmhl.hardcoreworldreset.HardcoreWorldReset
+api-version: '1.21.5'
+author: kdltmhl
+description: Deletes the world on every player death and resets the world timer
+depend: [Multiverse-Core, Multiverse-NetherPortals]

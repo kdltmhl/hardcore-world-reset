@@ -1,0 +1,35 @@
+# ------------------------------------ #
+# HardcoreWorldReset Plugin Settings #
+# ------------------------------------ #
+plugin-enabled: true
+
+# world naming prefix
+# WARNING!!!: Changing this value will create a new world!
+world-prefix: "hardcore_"
+
+# the method for swapping to the new world
+# SEAMLESS: instantly teleports all players to the new world
+# -> WARNING: Causes a lag spike at the start of the new world from creating the new standby world in the background after deleting the old one. This lag spike will cost your run several seconds of time depending on your server hardware.
+# DISCONNECT: Disconnects all players after a death and only lets them rejoin when the new world is ready. -> No lag spike and you start at 00:00:00
+swap-method: "SEAMLESS"
+
+# end goal of the run (currently only supports the ender dragon)
+end-goal: "ENDER_DRAGON"
+
+# splash texts after certain events
+messages:
+  kick-reason: "&6A player has died! The world is resetting."
+  title-main: "&cA player has died!"
+  title-subtitle: ""
+
+  # The %time% placeholder will be replaced with the final speedrun time.
+  dragon-defeat: "&aThe Ender Dragon has been defeated! &fFinal Time: &e%time%"
+
+  # redirect message on first join
+  redirect: "&aMoving you to the active hardcore world."
+
+# --- DO NOT EDIT BELOW THIS LINE ---
+state:
+  active-world: "hardcore_1"
+  standby-world: "hardcore_2"
+  world-counter: 2
