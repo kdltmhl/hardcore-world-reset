@@ -11,7 +11,7 @@ world-prefix: "hardcore_"
 # SEAMLESS: instantly teleports all players to the new world
 # -> WARNING: Causes a lag spike at the start of the new world from creating the new standby world in the background after deleting the old one. This lag spike will cost your run several seconds of time depending on your server hardware.
 # DISCONNECT: Disconnects all players after a death and only lets them rejoin when the new world is ready. -> No lag spike and you start at 00:00:00
-swap-method: "SEAMLESS"
+swap-method: "DISCONNECT"
 
 # end goal of the run (currently only supports the ender dragon)
 end-goal: "ENDER_DRAGON"
